@@ -94,21 +94,16 @@ ctx.close_path()
 
 
 #lateral part
-# ctx.move_to(165, 47.5)
-# ctx.line_to(165, 60)
-# ctx.line_to(172.5, 55)
-# ctx.line_to(172.5, 45)
-# ctx.close_path()
 ctx.move_to(165, 62)
+ctx.line_to(175, 55)
+ctx.line_to(175, 43)
+ctx.line_to(165, 48)
 
 
-# #top part
-# ctx.move_to(160, 45)
-# ctx.line_to(165, 47.5)
-# ctx.line_to(172.5, 55)
-# ctx.line_to(170, 37.5)
-# ctx.line_to(160, 45)
-# ctx.close_path()
+#top part
+ctx.move_to(160, 45)
+ctx.line_to(170, 40)
+ctx.line_to(175, 43)
 
 
 ctx.set_line_width(0.8)
@@ -138,32 +133,44 @@ ctx.line_to(185, 150)
 ctx.line_to(165, 160)
 ctx.line_to(180, 165)
 ctx.line_to(180, 170)
+
 ctx.move_to(180, 165)
 ctx.line_to(200, 155)
 ctx.move_to(165, 160)
 ctx.line_to(165, 155)
+
 ctx.move_to(185, 150)
 ctx.line_to(185, 145)
 
 ctx.move_to(120, 180)
 ctx.line_to(155, 160)
+
 ctx.move_to(190, 145)
 ctx.line_to(185, 147)
 
+# Door
 ctx.move_to(155, 150)
 ctx.line_to(155, 110)
 ctx.line_to(175, 100)
 ctx.line_to(175, 140)
 
+# Door window
 ctx.move_to(157, 110)
 ctx.line_to(157, 145)
 ctx.line_to(165, 141)
 ctx.line_to(165, 106)
 
+# R-wall windows
 ctx.move_to(150, 115)
 ctx.line_to(150, 93)
 ctx.line_to(140, 100)
 ctx.line_to(140, 121)
+ctx.close_path()
+
+ctx.move_to(136, 102)
+ctx.line_to(125, 108)
+ctx.line_to(125, 128)
+ctx.line_to(136, 123)
 ctx.close_path()
 
 ctx.set_source_rgb(0,0,0)
