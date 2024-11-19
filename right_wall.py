@@ -1,0 +1,68 @@
+import cairo
+
+surface = cairo.ImageSurface(cairo.FORMAT_ARGB32, 400, 400)
+ctx = cairo.Context(surface)
+ctx.set_source_rgb(1,1,1)
+ctx.paint()
+
+ctx.move_to(120, 180)
+ctx.line_to(120, 100)
+ctx.line_to(190, 65)
+ctx.line_to(190, 145)
+# ctx.line_to(147, 186)
+# ctx.close_path()
+
+ctx.move_to(155, 150)
+ctx.line_to(175, 140)
+ctx.line_to(185, 145)
+ctx.line_to(165, 155)
+ctx.close_path()
+
+ctx.move_to(155, 150)
+ctx.line_to(155, 165)
+ctx.line_to(180, 170)
+ctx.line_to(200, 160)
+ctx.line_to(200, 155)
+ctx.line_to(185, 150)
+ctx.line_to(165, 160)
+ctx.line_to(180, 165)
+ctx.line_to(180, 170)
+ctx.move_to(180, 165)
+ctx.line_to(200, 155)
+ctx.move_to(165, 160)
+ctx.line_to(165, 155)
+ctx.move_to(185, 150)
+ctx.line_to(185, 145)
+
+ctx.move_to(120, 180)
+ctx.line_to(155, 160)
+ctx.move_to(190, 145)
+ctx.line_to(185, 147)
+
+ctx.move_to(155, 150)
+ctx.line_to(155, 110)
+ctx.line_to(175, 100)
+ctx.line_to(175, 140)
+
+ctx.move_to(157, 110)
+ctx.line_to(157, 145)
+ctx.line_to(165, 141)
+ctx.line_to(165, 106)
+
+ctx.move_to(130, 130)
+ctx.line_to(130, 110)
+ctx.line_to(138, 98)
+ctx.line_to(138, 120)
+ctx.close_path()
+
+ctx.move_to(142, 98)
+ctx.line_to(150, 90)
+ctx.line_to(150, 110)
+ctx.line_to(142, 120)
+ctx.close_path()
+
+ctx.set_source_rgb(0,0,0)
+ctx.set_line_width(0.8)
+ctx.stroke()
+
+surface.write_to_png('right_wall.png')
