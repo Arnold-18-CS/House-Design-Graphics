@@ -12,9 +12,11 @@ ctx.line_to(70, 80)
 ctx.line_to(70, 165)
 ctx.close_path()
 
-ctx.move_to(120, 170)
-ctx.line_to(70, 155)
+ctx.move_to(120, 175)
+ctx.line_to(70, 160)
 ctx.line_to(70, 165)
+ctx.line_to(120, 180)
+ctx.close_path()
 
 ctx.set_source_rgb(0,0,0)
 ctx.set_line_width(0.8)
