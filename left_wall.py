@@ -22,25 +22,5 @@ ctx.set_source_rgb(0,0,0)
 ctx.set_line_width(0.8)
 ctx.stroke()
 
-# Ground structure
-context.move_to(70,158)
-context.line_to(40, 170)
-context.line_to(140, 200)
-context.line_to(240, 150)
-context.line_to(190,135)
-
-context.move_to(40,170)
-context.line_to(40,180)
-context.line_to(140,210)
-context.line_to(240,160)
-context.line_to(240,150)
-
-context.move_to(140,200)
-context.line_to(140,210)
-
-context.set_source_rgb(0,0,0)
-context.set_line_width(0.8)
-context.stroke()
-
 
 surface.write_to_png('left_wall.png')
