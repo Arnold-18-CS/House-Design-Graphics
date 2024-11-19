@@ -7,7 +7,7 @@ ctx.paint()
 
 # Draw the back roof (angled for 3D effect)
 ctx.move_to(60, 85)
-ctx.line_to(145, 40)
+ctx.line_to(145, 45)
 ctx.line_to(175, 35)
 ctx.line_to(90, 75)
 ctx.close_path()
@@ -21,22 +21,22 @@ ctx.line_to(90, 75)
 ctx.line_to(175, 35)
 ctx.close_path()
 
-#chimney
+# Chimney
 #front part
 ctx.move_to(160, 45)
 ctx.line_to(160, 60)
-ctx.line_to(165, 62.5)
+ctx.line_to(165, 60)
 ctx.line_to(165, 47.5)
 ctx.close_path()
-ctx.close_path()
+
 
 #lateral part
 ctx.move_to(165, 47.5)
-ctx.line_to(165, 62.5)
+ctx.line_to(165, 60)
 ctx.line_to(172.5, 55)
 ctx.line_to(172.5, 45)
 ctx.close_path()
-ctx.close_path()
+
 
 #top part
 ctx.move_to(160, 45)
