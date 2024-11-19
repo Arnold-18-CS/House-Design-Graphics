@@ -26,8 +26,8 @@ ctx.set_line_width(0.8)
 ctx.stroke()
 
 # Left Wall structure
-ctx.move_to(120, 180)
-ctx.line_to(120, 95)
+ctx.move_to(120, 178)
+ctx.line_to(120, 105)
 
 ctx.move_to(70, 80)
 ctx.line_to(70, 165)
@@ -112,7 +112,7 @@ ctx.stroke()
 
 # Right Wall
 ctx.move_to(120, 180)
-ctx.line_to(120, 100)
+ctx.line_to(120, 105)
 ctx.move_to(190, 65)
 ctx.line_to(190, 145)
 # ctx.line_to(147, 186)
